@@ -1,0 +1,511 @@
+:root {
+    --bg: white;
+    --text: black;
+    --wrap: rgb(47, 47, 47);
+}
+
+* {
+    margin: 0px;
+}
+
+@media (prefers-color-scheme: dark) {
+     :root {
+        --bg: black;
+        --text: white;
+        --wrap: rgb(47, 47, 47);
+    }
+}
+
+#color-mode:checked~* {
+    --bg: black;
+    --text: white;
+    --wrap: rgb(47, 47, 47);
+}
+
+@media (prefers-color-scheme: dark) {
+    #color-mode:checked~* {
+        --bg: white;
+        --text: black;
+        --wrap: rgb(228, 228, 228);
+    }
+}
+
+
+/** Toggle Button Position */
+
+.color-scheme-wrapper {
+    min-height: 100vh;
+    background: var(--bg);
+    color: var(--text);
+    transition: background 1s;
+}
+
+#color-mode {
+    position: absolute;
+}
+
+.dark-mode-hide {
+    position: absolute;
+    margin: 20px;
+    color: var(--text);
+}
+
+.light-mode-hide {
+    position: absolute;
+    margin-left: 20px;
+    color: var(--text);
+}
+
+
+/** Form Wrapper */
+
+.form-wrapper {
+    border: 2px var(--bg);
+    height: 1000px;
+    width: 700px;
+    display: flex;
+    position: absolute;
+    background-color: var(--wrap);
+    box-shadow: var(--text) 0px 1px 70px 4px;
+    border-radius: 40px;
+    left: 34%;
+    top: 6%;
+    transition: background-color 0.2s;
+    transition: box-shadow 1s;
+    transition: border-radius 0.4s;
+}
+
+
+/** Form Items */
+
+.form-content {
+    background-color: transparent;
+    width: 520px;
+    height: 700px;
+    margin-top: -75px;
+}
+
+
+/** Error Text */
+
+.error-text {
+    color: red;
+    font-size: 0.9rem;
+    position: absolute;
+    top: 55%;
+    left: 6px;
+}
+
+.error-text-a {
+    color: red;
+    font-size: 0.9rem;
+    position: absolute;
+    top: 67%;
+    left: 6px;
+}
+
+.error-text-e {
+    color: red;
+    font-size: 0.9rem;
+    position: absolute;
+    top: 55%;
+    left: 6px;
+}
+
+.error-text-n {
+    color: red;
+    font-size: 0.9rem;
+    position: absolute;
+    width: 400px;
+    top: 53%;
+    left: 2px;
+}
+
+.error-text-g {
+    color: red;
+    font-size: 0.9rem;
+    position: absolute;
+    top: 120%;
+    right: 69px;
+    width: 158px;
+    display: flex;
+    flex-direction: row;
+}
+
+.error-text-c {
+    color: red;
+    font-size: 0.9rem;
+    position: absolute;
+    top: 62%;
+    left: 4px;
+}
+
+.error-text-agrre {
+    color: red;
+    font-size: 0.9rem;
+    position: absolute;
+    width: 500px;
+    top: 274%;
+    left: 1px;
+}
+
+.error-text-ch {
+    color: red;
+    font-size: 0.9rem;
+    position: absolute;
+    width: 500px;
+    top: 300%;
+    left: 299px;
+}
+
+
+/** Head Text */
+
+.head-text {
+    position: absolute;
+    top: -160%;
+    left: 70px;
+    color: var(--text);
+    font-size: 4rem;
+    font-family: "poppins", sans-serif;
+    transition: all 0.5s;
+}
+
+
+/** Form Layout Css */
+
+.form-box {
+    display: flex;
+    position: absolute;
+    bottom: 57%;
+    left: 13%;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    transition: all 0.5s;
+}
+
+.input-container {
+    position: relative;
+}
+
+.input {
+    width: 500px;
+    height: 40px;
+    border: 2px solid var(--text);
+    border-radius: 10px;
+    outline: none;
+    padding-left: 10px;
+    color: var(--text);
+    background-color: transparent;
+    font-size: 1.2rem;
+    font-family: "poppins", sans-serif;
+    margin-bottom: 50px;
+}
+
+.address {
+    width: 500px;
+    height: 80px;
+    border: 2px solid var(--text);
+    border-radius: 10px;
+    outline: none;
+    padding-left: 10px;
+    color: var(--text);
+    background-color: transparent;
+    font-size: 1rem;
+    font-family: "poppins", sans-serif;
+    margin-bottom: 49px;
+}
+
+.input-radio {
+    position: relative;
+    left: 29px;
+    bottom: -1px;
+    width: 250px;
+    height: 20px;
+    border: 2px solid var(--text);
+    border-radius: 10px;
+    outline: none;
+    padding-left: 10px;
+    color: var(--text);
+    background-color: transparent;
+    font-size: 1.2rem;
+    font-family: "poppins", sans-serif;
+    margin-bottom: 29px;
+}
+
+.input::placeholder {
+    opacity: 0;
+}
+
+.address::placeholder {
+    opacity: 0;
+}
+
+.label {
+    position: absolute;
+    top: 23%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: var(--text);
+    font-size: 1.2rem;
+    font-family: "poppins", sans-serif;
+    transition: 0.5s;
+}
+
+.labeladd {
+    position: absolute;
+    top: 22%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: var(--text);
+    font-size: 1.2rem;
+    font-family: "poppins", sans-serif;
+    transition: all 0.5s;
+}
+
+
+/** Radio Group */
+
+.radio-group {
+    display: flex;
+    flex-direction: row;
+    width: 210px;
+    height: 20px;
+    position: absolute;
+    left: 20px;
+}
+
+.label-gender {
+    position: absolute;
+    bottom: -95%;
+    left: -20px;
+    transform: translateY(-50%);
+    color: var(--text);
+    font-size: 1.2rem;
+    font-family: "poppins", sans-serif;
+    transition: all 0.5s;
+}
+
+.label-male {
+    position: absolute;
+    bottom: -89%;
+    left: 100px;
+    transform: translateY(-50%);
+    color: var(--text);
+    font-size: 1.2rem;
+    font-family: "poppins", sans-serif;
+    transition: all 0.5s;
+}
+
+.label-female {
+    position: absolute;
+    bottom: -89%;
+    left: 206px;
+    transform: translateY(-50%);
+    color: var(--text);
+    font-size: 1.2rem;
+    font-family: "poppins", sans-serif;
+    transition: all 0.5s;
+}
+
+
+/** Drop Down City */
+
+.dropdown {
+    position: absolute;
+    top: 219%;
+    left: 1px;
+}
+
+.input-drop {
+    width: 518px;
+    height: 40px;
+    border: 2px solid var(--text);
+    border-radius: 10px;
+    outline: none;
+    padding-left: 10px;
+    color: var(--text);
+    background-color: transparent;
+    font-size: 1.2rem;
+    font-family: "poppins", sans-serif;
+    margin-bottom: 29px;
+}
+
+.input-drop option {
+    color: rgb(22, 22, 22);
+}
+
+.label-city {
+    position: absolute;
+    bottom: 89%;
+    left: -2px;
+    transform: translateY(-50%);
+    color: var(--text);
+    font-size: 1.2rem;
+    font-family: "poppins", sans-serif;
+    transition: all 0.5s;
+}
+
+
+/** Terms And Condition */
+
+.input-agree {
+    width: 180px;
+    height: 20px;
+    position: absolute;
+    bottom: -185%;
+    left: -80px;
+    border: 2px solid var(--text);
+    border-radius: 10px;
+    outline: none;
+    padding-left: 10px;
+    color: var(--text);
+    background-color: transparent;
+    margin-bottom: 29px;
+    cursor: pointer;
+}
+
+.label-agree {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 579px;
+    bottom: -180%;
+    left: 30px;
+    transform: translateY(-50%);
+    color: var(--text);
+    font-size: 1.2rem;
+    font-family: "poppins", sans-serif;
+    transition: all 0.5s;
+}
+
+
+/** Choose File */
+
+.input-choose {
+    position: absolute;
+    bottom: -213%;
+    left: -1px;
+}
+
+.input-choose::-webkit-file-upload-button {
+    width: 200px;
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid var(--text);
+    color: var(--text);
+    cursor: pointer;
+}
+
+
+/** Buttons */
+
+.input-btn {
+    position: absolute;
+    display: flex;
+    bottom: -255%;
+    left: -13px;
+    width: 257%;
+}
+
+.btn-sub,
+.btn-res {
+    margin: 0px 30px 0px 0px;
+    padding: 8px 100px;
+    font-family: "poppins", sans-serif;
+    font-size: 1.2rem;
+    background-position: center;
+    background-color: var(--text);
+    border: 2px solid var(--text);
+    color: var(--bg);
+    transition: all 0.5s;
+}
+
+.btn-sub:hover {
+    border: 2px solid var(--text);
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+.btn-res:hover {
+    border: 2px solid var(--text);
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+
+/** DO NOT TOUCH PLEASE STAY AWAY */
+
+.input:focus+.label,
+.input:not(:placeholder-shown)+.label {
+    top: 0;
+    font-size: 0.8rem;
+    color: var(--text);
+    background-color: var(--wrap);
+    padding: 5px;
+}
+
+.input:focus {
+    border-color: var(--text);
+}
+
+.address:focus+.labeladd,
+.address:not(:placeholder-shown)+.labeladd {
+    top: 0;
+    font-size: 0.8rem;
+    color: var(--text);
+    background-color: var(--wrap);
+    padding: 5px;
+}
+
+.address:focus {
+    border-color: var(--text);
+}
+
+
+/** Toggle - Button */
+
+#color-mode {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 62px;
+    height: 32px;
+    display: inline-block;
+    position: absolute;
+    right: 1%;
+    top: 2%;
+    border-radius: 50px;
+    overflow: hidden;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: var(--text);
+    transition: background-color ease 0.3s;
+}
+
+#color-mode:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    width: 26px;
+    height: 26px;
+    border-radius: 90%;
+    box-shadow: inset 100px 100px 0px 0px rgb(255, 251, 0);
+    transition: transform 0.5s;
+}
+
+#color-mode:checked {
+    background-color: var(--bg);
+}
+
+#color-mode:checked:before {
+    left: 9px;
+    background-color: black;
+    box-shadow: inset 8px -4px 0px 0px var(--text);
+    transform: translateX(26px);
+}

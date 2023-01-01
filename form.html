@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="color-mode" type="checkbox" name="color-mode">
+    <div class="color-scheme-wrapper">
+        <div class="form-wrapper">
+            <div class="form-box">
+                <form>
+                    <div class="form-content">
+                        <div class="input-container">
+                            <h1 class="head-text">Registration</h1>
+                            <input type="text" class="input" placeholder="name" />
+                            <label class="label">Enter Name</label><span class="error-text">*please fill up your name!</span>
+                        </div>
+                        <div class="input-container">
+                            <input type="text" class="address" placeholder="name" />
+                            <label class="labeladd">Enter Address</label><span class="error-text-a">*please fill up your Address!</span>
+                        </div>
+                        <div class="input-container">
+                            <input type="email" class="input" placeholder="name" />
+                            <label class="label">Enter Email</label><span class="error-text-e">*please fill up your Email!</span>
+                        </div>
+                        <div class="input-container">
+                            <input type="tel" class="input" placeholder="name" />
+                            <label class="label">Enter Number</label><span class="error-text-n">*please fill up your Phone number!</span>
+                        </div>
+                        <div class="radio-group">
+                            <label class="label-gender">Gender :</label><span class="error-text-g">*please select your gender!</span>
+                            <input type="radio" class="input-radio" name="gender">
+                            <label class="label-male" for="gender">Male</label>
+                            <input type="radio" class="input-radio" name="gender">
+                            <label class="label-female" for="gender">Female</label>
+                        </div>
+                        <div class="dropdown">
+                            <label class="label-city">City: </label><span class="error-text-c">*please select your city!</span>
+                            <select class="input-drop">
+                        <option>--Select--</option>
+                        <option>Ahmedabad</option>
+                        <option value="">Ghandhinager</option>
+                        <option value="">Mehmdabad</option>
+                        <option value="">Kota</option>
+                        <option value="">Ayodhiya</option>
+                    </select>
+                        </div>
+                        <div class="agree-content">
+                            <div class="agree">
+                                <input type="checkbox" class="input-agree">
+                                <label class="label-agree">I have agree to compneys&nbsp;<a href="#hello" id="terms-link">terms</a>&nbsp;and&nbsp;<a href="condition">condition</a>.</label><span class="error-text-agrre">*Agree on terms and condition to continue!</span>
+                            </div>
+                            <div class="choosefile">
+                                <input class="input-choose" type="file"><span class="error-text-ch">*Please select file!</span>
+                            </div>
+                        </div>
+                        <div class="input-btn">
+                            <button type="submit" value="submit" class="btn-sub">Submit</button><button type="reset" value="reset" class="btn-res">Reset</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

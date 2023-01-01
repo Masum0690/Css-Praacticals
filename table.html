@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="table.css">
+    <script src="https://kit.fontawesome.com/074bda9ab7.js" crossorigin="anonymous"></script>
+    <title>User Details</title>
+</head>
+<body>
+    <input id="color-mode" type="checkbox" name="color-mode">
+    <div class="color-scheme-wrapper">
+        <h1 id="head-text">User Details</h1>
+        <div id="head-bar">
+            <div class="sub-headbar">
+              <input type="search" placeholder="  Search...." title="Search" id="search">
+              <i class="fa-solid fa fa-magnifying-glass"></i>
+            </div>
+            <div class="sub-headbar1">  
+              <a href="form.html"><i class="fa-solid fa-user-plus" title="Add User" id="addic"></i></a>
+            </div>  
+        </div>
+   <div class="main-table">     
+    <table>
+        <tbody> 
+        <tr id="headback">
+            <th>Id <img src="icons/upArrow.svg" id="arrow"></th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+            <th>Gender</th>
+            <th>City</th>
+            <th colspan="2">Action</th>
+        </tr>
+        <tr class="effect">
+            <td id="idc">5</td>
+            <td>Fulvanti Madaliya</td>
+            <td>A-25 Rajvi nikol Ahmedabad</td>
+            <td>1234567890</td>
+            <td>ab@gmail.com</td>
+            <td>Female</td>
+            <td>Ahmedabad</td>
+            <td>
+                <a href="#blank"><img src="icons/pen.svg"  title="Edit" height="20PX" alt="edit image"></a>
+            </td>
+            <td width="20px">        
+                <a href="#blank"><img src="icons/trash.svg" title="Delete" height="20PX"></a>
+            </td>
+        </tr>
+        <tr class="effect">
+            <td id="idc">4</td>
+            <td>Jeenal Kanpuriya</td>
+            <td>A-20 sadhana residency, Rajkot</td>
+            <td>9337392028</td>
+            <td>bd@gmail.com</td>
+            <td>Female</td>
+            <td>Rajkot</td>
+            <td>
+                <a href="#blank"><img src="icons/pen.svg"  title="Edit" height="20PX" alt="edit image"></a>
+            </td>
+            <td width="20px">        
+                <a href="#blank"><img src="icons/trash.svg" title="Delete" height="20PX"></a>
+            </td>
+        </tr>
+        <tr class="effect">
+            <td id="idc">3</td>
+            <td>Prit Madaliya</td>
+            <td>A-302 Rajvi nikol,Vadodara</td>
+            <td>67890123456</td>
+            <td>ef@gmail.com</td>
+            <td>Male</td>
+            <td>Vadodara</td>
+            <td>
+                <a href="#blank"><img src="icons/pen.svg"  title="Edit" height="20PX" alt="edit image"></a>
+            </td>
+            <td width="20px">        
+                <a href="#blank"><img src="icons/trash.svg" title="Delete" height="20PX"></a>
+            </td>
+        </tr>
+        <tr class="effect">
+            <td id="idc">2</td>
+            <td>Reena Bhadani</td>
+            <td>A-55 Badnsidher, Jamnager</td>
+            <td>0987654321</td>
+            <td>gh@gmail.com</td>
+            <td>Female</td>
+            <td>Jamnager</td>
+            <td>
+                <a href="#blank"><img src="icons/pen.svg"  title="Edit" height="20PX" alt="edit image"></a>
+            </td>
+            <td width="20px">        
+                <a href="#blank"><img src="icons/trash.svg" title="Delete" height="20PX"></a>
+            </td>
+        </tr>
+        <tr class="effect">
+            <td id="idc">1</td>
+            <td>Parv Mulani</td>
+            <td>A-505 chankya vastrapur,Surat</td>
+            <td>1456789012</td>
+            <td>ac@gmail.com</td>
+            <td>Male</td>
+            <td>Surat</td>
+            <td width="20px">
+                <a href="#blank"><img src="icons/pen.svg"  title="Edit" height="20PX" alt="edit image"></a>
+            </td>
+            <td width="20px">        
+                <a href="#blank"><img src="icons/trash.svg" title="Delete" height="20PX"></a>
+            </td>
+        </tr>
+    </tbody>    
+</div>  
+  </table>
+  <div class="foot">
+    <div class="sub-foot">
+            <select title="List">
+                <option value="">05</option>
+                <option value="">10</option>
+                <option value="">15</option>
+                <option value="">20</option>
+            </select>
+    </div>        
+    <div class="sub-foot1">  
+        <td colspan="3" id="pagi">
+           <button disabled id="offnow"><img src="icons/LastPageIcon.svg" height="20px" width="20px" title="First" style="rotate: 180deg;"></button>
+           <button disabled id="offnow"><img src="icons/nextIcon.svg" height="20px" width="20px" title="Previous" style="rotate: 180deg;"></button> 
+             <sup>Page 1 of 5</sup>
+           <button><img src="icons/nextIcon.svg" height="20px" width="20px" title="Next"></button>
+           <button><img src="icons/lastPageIcon.svg" height="20px" width="20px" title="Last"></button>                
+    </div>
+  </div>
+</div>
+</body>
+</html>
